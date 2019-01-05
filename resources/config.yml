@@ -1,0 +1,18 @@
+## WebSKT Config
+
+# This is used when attempting to fix a bug in WebSKT.
+# This option does not change anything other than changing what is printed to the console.
+# If you are not currently in the process of fixing a bug in WebSKT,
+# and would like to remove console spam, set this option to [].
+
+debug: []
+
+# If this option is true and an error occurs in a websocket client or server template
+# that does not contain an 'on error' section,
+# then WebSKT will automatically print the error to the console.
+# It is not recommended to set this to false if you are omitting the 'on error' section
+# as you will then miss crucial error information
+# that may explain problems you might be having with your websocket scripts.
+# If you are using the 'on error' section in all of your websocket templates
+# then this option is disregarded, but it is still recommended to keep it as true.
+print_websocket_errors: true
